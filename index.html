@@ -3,21 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>ARGOS · Tamizaje visual pediátrico</title>
-<meta name="description" content="ARGOS: dispositivo portátil de tamizaje visual pediátrico que identifica factores de riesgo de ambliopía en niñas y niños de 3 a 6 años.">
+<title>Bleenky · Tamizaje visual pediátrico</title>
+<meta name="description" content="Bleenky: dispositivo portátil de tamizaje visual pediátrico que identifica factores de riesgo de ambliopía en niñas y niños de 3 a 6 años.">
 <meta name="theme-color" content="#050D1A">
 <meta name="color-scheme" content="light dark">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_PE">
-<meta property="og:site_name" content="ARGOS">
-<meta property="og:title" content="ARGOS · Tamizaje visual pediátrico">
+<meta property="og:site_name" content="Bleenky">
+<meta property="og:title" content="Bleenky · Tamizaje visual pediátrico">
 <meta property="og:description" content="Dispositivo portátil de tamizaje visual pediátrico que identifica factores de riesgo de ambliopía en niñas y niños de 3 a 6 años.">
 <meta name="twitter:card" content="summary">
 <link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="apple-touch-icon" href="img/icon-180.png">
 <meta property="og:image" content="https://ejbv109.github.io/argos_webpage/img/og-image.jpg">
-<meta property="og:image:alt" content="Dispositivo ARGOS detectando los ojos de una persona en su pantalla táctil">
-<link rel="preload" as="image" href="img/argos-logo.webp" type="image/webp">
+<meta property="og:image:alt" content="Dispositivo Bleenky detectando los ojos de una persona en su pantalla táctil">
+<link rel="preload" as="image" href="img/bleenky-logo.webp" type="image/webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Sora:wght@500;600;700&display=swap">
@@ -26,7 +26,7 @@
   /* Antes del primer pintado: aplica el tema guardado y marca que hay JS (evita parpadeos) */
   (function () {
     var d = document.documentElement;
-    try { var t = localStorage.getItem('argos-theme'); if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t); } catch (e) {}
+    try { var t = localStorage.getItem('bleenky-theme'); if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t); } catch (e) {}
     if ('IntersectionObserver' in window) d.classList.add('js');
   })();
 </script>
@@ -638,8 +638,8 @@
 
 <header id="top" class="site-header ink-scope">
   <div class="header-row mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-    <a href="#inicio" class="brand flex shrink-0 items-center" aria-label="ARGOS Vision Screening System, ir al inicio">
-      <img src="img/argos-logo.webp" alt="" width="900" height="270" class="logo h-10 w-auto lg:h-12" decoding="async">
+    <a href="#inicio" class="brand flex shrink-0 items-center" aria-label="Bleenky Vision Screening System, ir al inicio">
+      <img src="img/bleenky-logo.webp" alt="" width="900" height="270" class="logo h-10 w-auto lg:h-12" decoding="async">
     </a>
 
     <nav aria-label="Principal" class="hidden xl:block">
@@ -703,7 +703,7 @@
         </div>
         <h1 id="hero-title" class="h1 rise mt-7" style="--d:90ms">Que ningún niño crezca viendo menos <span class="bg-linear-to-r from-cyan via-sky-300 to-azure box-decoration-clone bg-clip-text text-transparent">de lo que podría.</span></h1>
         <p class="lede rise mt-6 text-ink-muted" style="--d:180ms">
-          ARGOS es un dispositivo portátil de tamizaje visual infantil que identifica, de forma rápida y automatizada, factores de riesgo de ambliopía en niños de 3 a 6 años. Combina fotorrefracción infrarroja y Hirschberg fotográfico, y guarda cada estudio para que especialistas lo revisen por telemedicina, incluso con conectividad limitada.
+          Bleenky es un dispositivo portátil de tamizaje visual infantil que identifica, de forma rápida y automatizada, factores de riesgo de ambliopía en niños de 3 a 6 años. Combina fotorrefracción infrarroja y Hirschberg fotográfico, y guarda cada estudio para que especialistas lo revisen por telemedicina, incluso con conectividad limitada.
         </p>
         <div class="rise mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap" style="--d:270ms">
           <a href="#contacto" class="btn btn-primary">Solicitar una demostración
@@ -729,11 +729,11 @@
               <div class="feed-bar">
                 <span class="flex min-w-0 items-center gap-3">
                   <span class="flex gap-1.5" aria-hidden="true"><span class="lamp"></span><span class="lamp"></span><span class="lamp"></span></span>
-                  <span class="mono truncate text-[0.74rem] tracking-wide">ARGOS · Vista binocular IR</span>
+                  <span class="mono truncate text-[0.74rem] tracking-wide">Bleenky · Vista binocular IR</span>
                 </span>
                 <span class="flex shrink-0 items-center gap-2"><span class="dot-warm" aria-hidden="true"></span>Fijación</span>
               </div>
-              <canvas id="eye" role="img" aria-label="Simulación de la vista infrarroja binocular de ARGOS: ambos ojos con el reflejo de fondo dentro de la pupila, el meridiano de medición resaltado y el esquema de los LEDs que se encienden en cada meridiano."></canvas>
+              <canvas id="eye" role="img" aria-label="Simulación de la vista infrarroja binocular de Bleenky: ambos ojos con el reflejo de fondo dentro de la pupila, el meridiano de medición resaltado y el esquema de los LEDs que se encienden en cada meridiano."></canvas>
               <div class="feed-ctrl grid gap-5 border-t border-white/10 p-4 sm:p-5">
                 <div class="flex flex-wrap items-center justify-between gap-3">
                   <span class="text-sm font-medium text-ink-muted" id="merLabel">Meridiano del destello</span>
@@ -757,7 +757,7 @@
           </div>
         </div>
         <figcaption class="mt-5 max-w-[62ch] text-sm leading-relaxed text-ink-muted">
-          <strong class="text-ink-fg">Simulación educativa.</strong> En cada meridiano (0°, 60° y 120°) se encienden dos grupos de LEDs infrarrojos a ambos lados de la cámara. ARGOS captura ambos ojos a la vez: la pendiente de brillo dentro de cada pupila, a lo largo de esa dirección, crece con el error refractivo; con los tres meridianos se estiman esfera, cilindro y eje.
+          <strong class="text-ink-fg">Simulación educativa.</strong> En cada meridiano (0°, 60° y 120°) se encienden dos grupos de LEDs infrarrojos a ambos lados de la cámara. Bleenky captura ambos ojos a la vez: la pendiente de brillo dentro de cada pupila, a lo largo de esa dirección, crece con el error refractivo; con los tres meridianos se estiman esfera, cilindro y eje.
         </figcaption>
       </figure>
     </div>
@@ -773,7 +773,7 @@
           <h2 id="dispositivo-title" class="h2 mt-5">Un dispositivo que no le da miedo al niño <span class="bg-linear-to-r from-cyan via-sky-300 to-azure box-decoration-clone bg-clip-text text-transparent">y que el personal de salud puede revisar.</span></h2>
         </div>
         <div>
-          <p class="lede text-ink-muted">Prototipo funcional de ARGOS: captura infrarroja, pantalla táctil, impresora térmica y portal de telemedicina en un solo dispositivo portátil.</p>
+          <p class="lede text-ink-muted">Prototipo funcional de Bleenky: captura infrarroja, pantalla táctil, impresora térmica y portal de telemedicina en un solo dispositivo portátil.</p>
           <ul class="mt-6 flex flex-wrap gap-2" aria-label="Medidas del prototipo">
             <li class="chip">296 × 165 × 191 mm</li>
           </ul>
@@ -783,47 +783,47 @@
 
       <figure id="video" class="video reveal mt-14">
         <div class="video-frame">
-          <a class="video-poster" href="https://youtu.be/D4sbKSW_wb8" data-yt="D4sbKSW_wb8" aria-label="Reproducir video: ARGOS, concientización y uso del dispositivo">
-            <img src="https://i.ytimg.com/vi/D4sbKSW_wb8/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=function(){this.onerror=null;this.src='img/argos-telemedicina-1600.webp'};this.src='https://i.ytimg.com/vi/D4sbKSW_wb8/hqdefault.jpg'">
+          <a class="video-poster" href="https://youtu.be/D4sbKSW_wb8" data-yt="D4sbKSW_wb8" aria-label="Reproducir video: Bleenky, concientización y uso del dispositivo">
+            <img src="https://i.ytimg.com/vi/D4sbKSW_wb8/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=function(){this.onerror=null;this.src='img/bleenky-telemedicina-1600.webp'};this.src='https://i.ytimg.com/vi/D4sbKSW_wb8/hqdefault.jpg'">
             <span class="video-play" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l10.5-6.5z"/></svg></span>
             <span class="video-meta">
               <span class="video-kicker"><span class="dot-warm" aria-hidden="true"></span>Video</span>
-              <strong>ARGOS en acción</strong>
+              <strong>Bleenky en acción</strong>
               <span>Por qué es importante detectar la ambliopía a tiempo y cómo se usa el dispositivo.</span>
             </span>
           </a>
         </div>
         <figcaption class="mt-4 flex flex-wrap items-center justify-between gap-3 text-sm text-ink-muted">
-          <span>Concientización y uso de ARGOS.</span>
+          <span>Concientización y uso de Bleenky.</span>
           <a class="flink" href="https://youtu.be/D4sbKSW_wb8" target="_blank" rel="noopener noreferrer">Ver en YouTube <span aria-hidden="true">↗</span><span class="sr-only"> (se abre en una pestaña nueva)</span></a>
         </figcaption>
       </figure>
 
       <div class="mt-6 grid gap-4 lg:grid-cols-12 lg:gap-5">
         <figure class="shot reveal lg:col-span-7">
-          <button type="button" class="shot-btn" data-full="img/argos-captura-1600.webp" data-alt="Pantalla del dispositivo ARGOS mostrando el rostro de una persona en infrarrojo con el mensaje «Ojos detectados correctamente»." data-caption="Captura guiada. La pantalla confirma que detectó ambos ojos antes de medir, con luz infrarroja invisible para el niño." aria-label="Ampliar imagen: Captura guiada">
-            <img src="img/argos-captura-800.webp" srcset="img/argos-captura-800.webp 800w, img/argos-captura-1600.webp 1600w" sizes="(min-width: 1024px) 58vw, (min-width: 640px) 90vw, 100vw" alt="Pantalla del dispositivo ARGOS mostrando el rostro de una persona en infrarrojo con el mensaje «Ojos detectados correctamente»." width="1600" height="1004" loading="eager" decoding="async">
+          <button type="button" class="shot-btn" data-full="img/bleenky-captura-1600.webp" data-alt="Pantalla del dispositivo Bleenky mostrando el rostro de una persona en infrarrojo con el mensaje «Ojos detectados correctamente»." data-caption="Captura guiada. La pantalla confirma que detectó ambos ojos antes de medir, con luz infrarroja invisible para el niño." aria-label="Ampliar imagen: Captura guiada">
+            <img src="img/bleenky-captura-800.webp" srcset="img/bleenky-captura-800.webp 800w, img/bleenky-captura-1600.webp 1600w" sizes="(min-width: 1024px) 58vw, (min-width: 640px) 90vw, 100vw" alt="Pantalla del dispositivo Bleenky mostrando el rostro de una persona en infrarrojo con el mensaje «Ojos detectados correctamente»." width="1600" height="1004" loading="eager" decoding="async">
             <span class="shot-zoom" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
           </button>
           <figcaption class="shot-cap"><strong>Captura guiada</strong><span>La pantalla confirma que detectó ambos ojos antes de medir, con luz infrarroja invisible para el niño.</span></figcaption>
         </figure>
         <figure class="shot reveal lg:col-span-5">
-          <button type="button" class="shot-btn" data-full="img/argos-dimensiones-1600.webp" data-alt="Vistas frontal y lateral del dispositivo ARGOS, azul con asas color crema y un anillo de luces naranjas alrededor de la cámara, con sus medidas en milímetros." data-caption="Pensado para niños. Carcasa ergonómica con asas y luz de fijación naranja. Medidas del prototipo: 296 × 165 × 191 mm." aria-label="Ampliar imagen: Pensado para niños">
-            <img src="img/argos-dimensiones-800.webp" srcset="img/argos-dimensiones-800.webp 800w, img/argos-dimensiones-1600.webp 1600w" sizes="(min-width: 1024px) 40vw, (min-width: 640px) 90vw, 100vw" alt="Vistas frontal y lateral del dispositivo ARGOS, azul con asas color crema y un anillo de luces naranjas alrededor de la cámara, con sus medidas en milímetros." width="1600" height="1200" loading="lazy" decoding="async">
+          <button type="button" class="shot-btn" data-full="img/bleenky-dimensiones-1600.webp" data-alt="Vistas frontal y lateral del dispositivo Bleenky, azul con asas color crema y un anillo de luces naranjas alrededor de la cámara, con sus medidas en milímetros." data-caption="Pensado para niños. Carcasa ergonómica con asas y luz de fijación naranja. Medidas del prototipo: 296 × 165 × 191 mm." aria-label="Ampliar imagen: Pensado para niños">
+            <img src="img/bleenky-dimensiones-800.webp" srcset="img/bleenky-dimensiones-800.webp 800w, img/bleenky-dimensiones-1600.webp 1600w" sizes="(min-width: 1024px) 40vw, (min-width: 640px) 90vw, 100vw" alt="Vistas frontal y lateral del dispositivo Bleenky, azul con asas color crema y un anillo de luces naranjas alrededor de la cámara, con sus medidas en milímetros." width="1600" height="1200" loading="lazy" decoding="async">
             <span class="shot-zoom" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
           </button>
           <figcaption class="shot-cap"><strong>Pensado para niños</strong><span>Carcasa ergonómica con asas y luz de fijación naranja. Medidas del prototipo: 296 × 165 × 191 mm.</span></figcaption>
         </figure>
         <figure class="shot shot-tele reveal lg:col-span-5">
-          <button type="button" class="shot-btn" data-full="img/argos-telemedicina-1600.webp" data-alt="Portal web de telemedicina de ARGOS en una laptop, junto al dispositivo mostrando los resultados del examen." data-caption="Revisión por telemedicina. Un especialista revisa a distancia las imágenes de cada meridiano y valida el resultado en el portal clínico." aria-label="Ampliar imagen: Revisión por telemedicina">
-            <img src="img/argos-telemedicina-800.webp" srcset="img/argos-telemedicina-800.webp 800w, img/argos-telemedicina-1600.webp 1600w" sizes="(min-width: 1024px) 40vw, (min-width: 640px) 90vw, 100vw" alt="Portal web de telemedicina de ARGOS en una laptop, junto al dispositivo mostrando los resultados del examen." width="1600" height="1200" loading="lazy" decoding="async">
+          <button type="button" class="shot-btn" data-full="img/bleenky-telemedicina-1600.webp" data-alt="Portal web de telemedicina de Bleenky en una laptop, junto al dispositivo mostrando los resultados del examen." data-caption="Revisión por telemedicina. Un especialista revisa a distancia las imágenes de cada meridiano y valida el resultado en el portal clínico." aria-label="Ampliar imagen: Revisión por telemedicina">
+            <img src="img/bleenky-telemedicina-800.webp" srcset="img/bleenky-telemedicina-800.webp 800w, img/bleenky-telemedicina-1600.webp 1600w" sizes="(min-width: 1024px) 40vw, (min-width: 640px) 90vw, 100vw" alt="Portal web de telemedicina de Bleenky en una laptop, junto al dispositivo mostrando los resultados del examen." width="1600" height="1200" loading="lazy" decoding="async">
             <span class="shot-zoom" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
           </button>
           <figcaption class="shot-cap"><strong>Revisión por telemedicina</strong><span>Un especialista revisa a distancia las imágenes de cada meridiano y valida el resultado en el portal clínico.</span></figcaption>
         </figure>
         <figure class="shot shot-report reveal lg:col-span-7">
-          <button type="button" class="shot-btn" data-full="img/argos-reporte-1600.webp" data-alt="Reporte impreso de ARGOS con los valores de refracción de cada ojo y la recomendación, junto al dispositivo imprimiéndolo." data-caption="Reporte impreso al instante. Esfera, cilindro, eje, estrabismo y recomendación de derivación, sin computadora ni conexión." aria-label="Ampliar imagen: Reporte impreso al instante">
-            <img src="img/argos-reporte-800.webp" srcset="img/argos-reporte-800.webp 800w, img/argos-reporte-1600.webp 1600w" sizes="(min-width: 1024px) 58vw, (min-width: 640px) 90vw, 100vw" alt="Reporte impreso de ARGOS con los valores de refracción de cada ojo y la recomendación, junto al dispositivo imprimiéndolo." width="1600" height="1200" loading="lazy" decoding="async">
+          <button type="button" class="shot-btn" data-full="img/bleenky-reporte-1600.webp" data-alt="Reporte impreso de Bleenky con los valores de refracción de cada ojo y la recomendación, junto al dispositivo imprimiéndolo." data-caption="Reporte impreso al instante. Esfera, cilindro, eje, estrabismo y recomendación de derivación, sin computadora ni conexión." aria-label="Ampliar imagen: Reporte impreso al instante">
+            <img src="img/bleenky-reporte-800.webp" srcset="img/bleenky-reporte-800.webp 800w, img/bleenky-reporte-1600.webp 1600w" sizes="(min-width: 1024px) 58vw, (min-width: 640px) 90vw, 100vw" alt="Reporte impreso de Bleenky con los valores de refracción de cada ojo y la recomendación, junto al dispositivo imprimiéndolo." width="1600" height="1200" loading="lazy" decoding="async">
             <span class="shot-zoom" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
           </button>
           <figcaption class="shot-cap"><strong>Reporte impreso al instante</strong><span>Esfera, cilindro, eje, estrabismo y recomendación de derivación, sin computadora ni conexión.</span></figcaption>
@@ -841,7 +841,7 @@
           <p class="eyebrow">Servicios</p>
           <h2 id="servicios-title" class="h2 mt-5">Todo el tamizaje visual en <span class="bg-linear-to-r from-accent to-accent-2 box-decoration-clone bg-clip-text text-transparent">un solo dispositivo portátil.</span></h2>
         </div>
-        <p class="lede text-muted">ARGOS cubre el recorrido completo: captura, análisis, reporte y seguimiento. Gira cada tarjeta para ver el detalle técnico de cada servicio.</p>
+        <p class="lede text-muted">Bleenky cubre el recorrido completo: captura, análisis, reporte y seguimiento. Gira cada tarjeta para ver el detalle técnico de cada servicio.</p>
       </div>
 
       <div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
@@ -993,7 +993,7 @@
         <div class="sticky-col reveal min-w-0">
           <p class="eyebrow">Propuesta de valor</p>
           <h2 id="ventajas-title" class="h2 mt-5">Tamizaje visual accesible <span class="bg-linear-to-r from-accent to-accent-2 box-decoration-clone bg-clip-text text-transparent">para el primer nivel de atención.</span></h2>
-          <p class="lede mt-6 text-muted">ARGOS lleva el tamizaje instrumental a donde más se necesita: consultorios CRED, colegios y campañas comunitarias. Es un dispositivo portátil, de bajo costo y desarrollado en el Perú, que funciona sin internet, entrega un reporte al instante y complementa el tamizaje que establece la Guía Técnica del MINSA <a class="cite" href="#ref6">[6]</a>.</p>
+          <p class="lede mt-6 text-muted">Bleenky lleva el tamizaje instrumental a donde más se necesita: consultorios CRED, colegios y campañas comunitarias. Es un dispositivo portátil, de bajo costo y desarrollado en el Perú, que funciona sin internet, entrega un reporte al instante y complementa el tamizaje que establece la Guía Técnica del MINSA <a class="cite" href="#ref6">[6]</a>.</p>
         </div>
 
         <ul class="grid gap-4 sm:grid-cols-2">
@@ -1027,7 +1027,7 @@
       <div class="mt-20">
         <div class="reveal max-w-3xl">
           <p class="eyebrow">Ventaja competitiva</p>
-          <h3 class="h2 mt-5 text-[clamp(1.6rem,1.2rem+1.4vw,2.35rem)]">¿Qué hace diferente a ARGOS?</h3>
+          <h3 class="h2 mt-5 text-[clamp(1.6rem,1.2rem+1.4vw,2.35rem)]">¿Qué hace diferente a Bleenky?</h3>
         </div>
         <div class="mt-10 grid gap-4 md:grid-cols-3 lg:gap-5">
           <article class="diff-card spot reveal">
@@ -1038,7 +1038,7 @@
           <article class="diff-card spot reveal">
             <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5.5" rx="7" ry="2.5"/><path d="M5 5.5v6c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-6M5 11.5v6c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-6"/></svg></span>
             <h4 class="relative mt-5 font-display text-lg font-semibold tracking-tight">Dataset de calibración peruano</h4>
-            <p class="relative mt-2 text-sm leading-relaxed text-ink-muted">La fotorrefracción no mide dioptrías: mide el brillo pupilar y lo convierte con un factor de escala que depende de la reflectividad del fondo de ojo. Ninguna cohorte publicada caracteriza a la población peruana; ARGOS se calibrará con ella.</p>
+            <p class="relative mt-2 text-sm leading-relaxed text-ink-muted">La fotorrefracción no mide dioptrías: mide el brillo pupilar y lo convierte con un factor de escala que depende de la reflectividad del fondo de ojo. Ninguna cohorte publicada caracteriza a la población peruana; Bleenky se calibrará con ella.</p>
           </article>
           <article class="diff-card spot reveal">
             <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/><path d="M15.5 8.5L21 3M18 3h3v3"/></svg></span>
@@ -1058,9 +1058,9 @@
         <div class="cmp-wrap mt-6" data-scroll="none">
           <div class="cmp-scroll" tabindex="0" role="region" aria-labelledby="cmp-title">
             <table class="cmp cmp-matrix">
-              <caption class="sr-only">Comparación de ARGOS con tres fotoscreeners comerciales y un dispositivo académico</caption>
+              <caption class="sr-only">Comparación de Bleenky con tres fotoscreeners comerciales y un dispositivo académico</caption>
               <thead>
-                <tr><th scope="col">Criterio</th><th scope="col"><span class="block">Screener 1</span><span class="cmp-price">&gt; US$ 6 000</span></th><th scope="col"><span class="block">Screener 2</span><span class="cmp-price">&gt; US$ 7 000</span></th><th scope="col"><span class="block">Screener 3</span><span class="cmp-price">&gt; US$ 4 600</span></th><th scope="col"><span class="block">Dispositivo académico <a class="cite" href="#ref5">[5]</a></span><span class="cmp-price">~ US$ 120</span></th><th scope="col" class="us"><span class="block">ARGOS</span><span class="cmp-price">Nuestra propuesta</span></th></tr>
+                <tr><th scope="col">Criterio</th><th scope="col"><span class="block">Screener 1</span><span class="cmp-price">&gt; US$ 6 000</span></th><th scope="col"><span class="block">Screener 2</span><span class="cmp-price">&gt; US$ 7 000</span></th><th scope="col"><span class="block">Screener 3</span><span class="cmp-price">&gt; US$ 4 600</span></th><th scope="col"><span class="block">Dispositivo académico <a class="cite" href="#ref5">[5]</a></span><span class="cmp-price">~ US$ 120</span></th><th scope="col" class="us"><span class="block">Bleenky</span><span class="cmp-price">Nuestra propuesta</span></th></tr>
               </thead>
               <tbody>
                 <tr><th scope="row">Portabilidad</th><td><span class="mark m-mid"><i aria-hidden="true">±</i><span class="sr-only">Parcial</span></span></td><td><span class="mark m-yes"><i aria-hidden="true">✓</i><span class="sr-only">Sí</span></span></td><td><span class="mark m-yes"><i aria-hidden="true">✓</i><span class="sr-only">Sí</span></span></td><td><span class="mark m-yes"><i aria-hidden="true">✓</i><span class="sr-only">Sí</span></span></td><td class="us"><span class="mark m-yes"><i aria-hidden="true">✓</i><span class="sr-only">Sí</span></span></td></tr>
@@ -1077,7 +1077,7 @@
         </div>
         <div class="mt-4 flex flex-wrap items-center justify-between gap-3 text-xs text-muted">
           <p class="flex flex-wrap items-center gap-4"><span class="mark m-yes"><i aria-hidden="true">✓</i>Sí</span><span class="mark m-mid"><i aria-hidden="true">±</i>Parcial</span><span class="mark m-no"><i aria-hidden="true">–</i>No</span></p>
-          <p>Precios referenciales. Comparación elaborada por el equipo ARGOS.</p>
+          <p>Precios referenciales. Comparación elaborada por el equipo de Myngop.</p>
         </div>
       </div>
         </div>
@@ -1115,9 +1115,9 @@
       <div class="reveal grid gap-6 lg:grid-cols-2 lg:items-end lg:gap-16">
         <div>
           <p class="eyebrow">Estrategia digital</p>
-          <h2 id="estrategia-title" class="h2 mt-5">Cómo llevamos ARGOS a quienes <span class="bg-linear-to-r from-accent to-accent-2 box-decoration-clone bg-clip-text text-transparent">cuidan la visión infantil.</span></h2>
+          <h2 id="estrategia-title" class="h2 mt-5">Cómo llevamos Bleenky a quienes <span class="bg-linear-to-r from-accent to-accent-2 box-decoration-clone bg-clip-text text-transparent">cuidan la visión infantil.</span></h2>
         </div>
-        <p class="lede text-muted">ARGOS se dirige a instituciones que compran y usan dispositivos médicos. Por eso nuestra estrategia digital no solo promociona: construye confianza con evidencia, educa sobre la detección temprana y convierte el interés en demostraciones y pilotos.</p>
+        <p class="lede text-muted">Bleenky se dirige a instituciones que compran y usan dispositivos médicos. Por eso nuestra estrategia digital no solo promociona: construye confianza con evidencia, educa sobre la detección temprana y convierte el interés en demostraciones y pilotos.</p>
       </div>
 
       <div class="reveal mt-10">
@@ -1128,7 +1128,7 @@
       <div class="mt-16">
         <h3 class="h3 text-[1.4rem]">Objetivos, de la visibilidad a la adopción</h3>
         <ol class="funnel mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <li class="funnel-step reveal"><span class="funnel-n" aria-hidden="true">01</span><p class="funnel-stage">Reconocimiento</p><h4 class="mt-2 font-display text-lg font-semibold tracking-tight">Posicionar</h4><p class="mt-2 text-sm leading-relaxed text-muted">Dar a conocer ARGOS como alternativa portátil que integra refracción y alineación ocular en menos de 15 segundos.</p></li>
+          <li class="funnel-step reveal"><span class="funnel-n" aria-hidden="true">01</span><p class="funnel-stage">Reconocimiento</p><h4 class="mt-2 font-display text-lg font-semibold tracking-tight">Posicionar</h4><p class="mt-2 text-sm leading-relaxed text-muted">Dar a conocer Bleenky como alternativa portátil que integra refracción y alineación ocular en menos de 15 segundos.</p></li>
           <li class="funnel-step reveal"><span class="funnel-n" aria-hidden="true">02</span><p class="funnel-stage">Educación</p><h4 class="mt-2 font-display text-lg font-semibold tracking-tight">Concientizar</h4><p class="mt-2 text-sm leading-relaxed text-muted">Explicar por qué la detección temprana de la ambliopía importa, con contenido educativo para profesionales e instituciones.</p></li>
           <li class="funnel-step reveal"><span class="funnel-n" aria-hidden="true">03</span><p class="funnel-stage">Conversión</p><h4 class="mt-2 font-display text-lg font-semibold tracking-tight">Generar oportunidades</h4><p class="mt-2 text-sm leading-relaxed text-muted">Convertir el interés en solicitudes de información, demostraciones y pilotos institucionales.</p></li>
           <li class="funnel-step reveal"><span class="funnel-n" aria-hidden="true">04</span><p class="funnel-stage">Validación</p><h4 class="mt-2 font-display text-lg font-semibold tracking-tight">Escuchar al mercado</h4><p class="mt-2 text-sm leading-relaxed text-muted">Usar consultas, comentarios y solicitudes para detectar necesidades y mejorar el dispositivo y su propuesta.</p></li>
@@ -1184,7 +1184,7 @@
             <h3 class="h2 mt-4 text-[clamp(1.5rem,1.1rem+1.2vw,2.1rem)]">IA para comunicar mejor, no para diagnosticar.</h3>
             <p class="mt-4 max-w-[60ch] leading-relaxed text-ink-muted">Aplicamos IA para captar, calificar y convertir a potenciales clientes institucionales, con usos concretos y viables para la etapa actual del proyecto.</p>
             <ul class="mt-8 grid gap-5 sm:grid-cols-2">
-              <li class="ai-use"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h8M8 13h5"/></svg></span><div><h4 class="font-display font-semibold tracking-tight">Chatbot especializado</h4><p class="mt-1 text-sm leading-relaxed text-ink-muted">Atiende 24/7 solo con información validada de ARGOS (funcionamiento, ficha técnica, telemedicina, pilotos y proceso de adquisición), registra los datos de contacto y deriva a un representante las consultas clínicas, regulatorias o comerciales complejas.</p></div></li>
+              <li class="ai-use"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h8M8 13h5"/></svg></span><div><h4 class="font-display font-semibold tracking-tight">Chatbot especializado</h4><p class="mt-1 text-sm leading-relaxed text-ink-muted">Atiende 24/7 solo con información validada de Bleenky (funcionamiento, ficha técnica, telemedicina, pilotos y proceso de adquisición), registra los datos de contacto y deriva a un representante las consultas clínicas, regulatorias o comerciales complejas.</p></div></li>
               <li class="ai-use"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg></span><div><h4 class="font-display font-semibold tracking-tight">Lead scoring</h4><p class="mt-1 text-sm leading-relaxed text-ink-muted">El CRM asigna puntaje según el interés mostrado, como descargar la ficha técnica, asistir a un webinar o pedir una demostración. Con suficiente historial, pasa a segmentación predictiva para priorizar a quienes tienen más probabilidad de llegar a un piloto.</p></div></li>
               <li class="ai-use"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4z"/><path d="M18 15l.7 1.8 1.8.7-1.8.7L18 20l-.7-1.8-1.8-.7 1.8-.7z"/></svg></span><div><h4 class="font-display font-semibold tracking-tight">Contenido personalizado y automatizado</h4><p class="mt-1 text-sm leading-relaxed text-ink-muted">IA generativa adapta los mensajes a cada segmento (hospitales y centros de salud, entidades públicas, ONG, distribuidores y profesionales) y automatiza el seguimiento después de un formulario, un webinar o una demostración.</p></div></li>
               <li class="ai-use"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><div><h4 class="font-display font-semibold tracking-tight">Análisis de campañas y pruebas A/B</h4><p class="mt-1 text-sm leading-relaxed text-ink-muted">Compara versiones de mensajes y formatos para identificar los que obtienen mejor respuesta y optimizar las campañas de forma continua.</p></div></li>
@@ -1217,7 +1217,7 @@
               <caption class="sr-only">Indicadores de la estrategia digital: etapa, forma de medirlos, herramienta y justificación</caption>
               <thead><tr><th scope="col">Indicador</th><th scope="col">Etapa</th><th scope="col">Cómo se mide</th><th scope="col">Herramienta</th><th scope="col">Para qué</th></tr></thead>
               <tbody>
-                <tr><th scope="row">Alcance e impresiones</th><td><span class="stage">Reconocimiento</span></td><td>Usuarios alcanzados e impresiones</td><td>Métricas nativas de LinkedIn, Instagram, Facebook, TikTok y YouTube</td><td>Saber si ARGOS gana visibilidad entre profesionales de salud e instituciones.</td></tr>
+                <tr><th scope="row">Alcance e impresiones</th><td><span class="stage">Reconocimiento</span></td><td>Usuarios alcanzados e impresiones</td><td>Métricas nativas de LinkedIn, Instagram, Facebook, TikTok y YouTube</td><td>Saber si Bleenky gana visibilidad entre profesionales de salud e instituciones.</td></tr>
                 <tr><th scope="row">Tasa de engagement</th><td><span class="stage">Reconocimiento e interés</span></td><td>Interacciones ÷ alcance × 100</td><td>Métricas de redes sociales</td><td>Ver qué videos, infografías o resultados generan más interés y orientar el contenido.</td></tr>
                 <tr><th scope="row">Tráfico orgánico</th><td><span class="stage">Descubrimiento</span></td><td>Usuarios y sesiones desde búsqueda orgánica</td><td>Google Analytics 4, Google Search Console</td><td>Medir si el SEO funciona y si nos encuentran al buscar tamizaje visual infantil.</td></tr>
                 <tr><th scope="row">CTR</th><td><span class="stage">Consideración</span></td><td>Clics ÷ impresiones × 100</td><td>Google Ads, Search Console, anuncios en redes</td><td>Evaluar si anuncios y llamados a la acción llevan al usuario a más información.</td></tr>
@@ -1271,7 +1271,7 @@
             <div class="relative flex items-start justify-between gap-3">
               <svg class="quote-mark" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M13 7C7.7 8.6 4 12.9 4 18.6V25h9v-9H8.9c.4-3.1 2.3-5.4 5.3-6.6L13 7Zm15 0c-5.3 1.6-9 5.9-9 11.6V25h9v-9h-4.1c.4-3.1 2.3-5.4 5.3-6.6L28 7Z"/></svg>
             </div>
-            <blockquote class="relative">“Evaluar con cartilla a un niño de tres años toma tiempo y paciencia. Con ARGOS basta con que mire la luz unos segundos, y la mamá se va con el reporte en la mano.”</blockquote>
+            <blockquote class="relative">“Evaluar con cartilla a un niño de tres años toma tiempo y paciencia. Con Bleenky basta con que mire la luz unos segundos, y la mamá se va con el reporte en la mano.”</blockquote>
             <figcaption class="relative mt-auto flex items-center gap-3 border-t border-line pt-5 text-sm text-muted">
               <span class="avatar" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8.5" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/></svg></span>
               <span><strong class="block font-semibold text-fg">[Nombre]</strong>Licenciada en Enfermería, consultorio CRED</span>
@@ -1339,7 +1339,7 @@
         </div>
         <div class="card stat spot reveal">
           <p class="stat-n relative">&lt; <span data-count="15" data-decimals="0">15</span><small>s</small></p>
-          <p class="relative text-sm leading-relaxed text-muted">Tiempo objetivo de ARGOS por evaluación, reporte impreso incluido (especificación de diseño).</p>
+          <p class="relative text-sm leading-relaxed text-muted">Tiempo objetivo de Bleenky por evaluación, reporte impreso incluido (especificación de diseño).</p>
         </div>
       </div>
 
@@ -1352,7 +1352,7 @@
       <div class="reveal max-w-3xl">
         <p class="eyebrow">Normatividad y seguridad</p>
         <h2 id="normativa-title" class="h2 mt-5">Seguridad y cumplimiento <span class="bg-linear-to-r from-accent to-accent-2 box-decoration-clone bg-clip-text text-transparent">desde el diseño.</span></h2>
-        <p class="lede mt-6 text-muted">ARGOS se desarrolla con los marcos técnicos y éticos que exige un dispositivo médico en investigación. Estas normas guían el diseño; la conformidad formal se demostrará en las etapas de validación y registro.</p>
+        <p class="lede mt-6 text-muted">Bleenky se desarrolla con los marcos técnicos y éticos que exige un dispositivo médico en investigación. Estas normas guían el diseño; la conformidad formal se demostrará en las etapas de validación y registro.</p>
       </div>
 
       <div class="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
@@ -1374,7 +1374,7 @@
         </ol>
         <p class="mt-9 flex items-start gap-3 border-t border-line pt-6 text-sm text-muted">
           <svg class="mt-0.5 shrink-0 text-accent" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5v.01"/></svg>
-          <span>ARGOS es un dispositivo en investigación. No cuenta con registro sanitario y no está disponible para uso clínico.</span>
+          <span>Bleenky es un dispositivo en investigación. No cuenta con registro sanitario y no está disponible para uso clínico.</span>
         </p>
       </div>
 
@@ -1399,12 +1399,12 @@
       </div>
       <div class="grid gap-3">
           <details class="faq reveal" open>
-            <summary><span>¿ARGOS reemplaza la evaluación del oftalmólogo?</span><span class="faq-ico" aria-hidden="true"></span></summary>
-            <p>No. ARGOS es un dispositivo de tamizaje: identifica niños con factores de riesgo de ambliopía para derivarlos a tiempo. El diagnóstico y el tratamiento siempre los realiza el especialista.</p>
+            <summary><span>¿Bleenky reemplaza la evaluación del oftalmólogo?</span><span class="faq-ico" aria-hidden="true"></span></summary>
+            <p>No. Bleenky es un dispositivo de tamizaje: identifica niños con factores de riesgo de ambliopía para derivarlos a tiempo. El diagnóstico y el tratamiento siempre los realiza el especialista.</p>
           </details>
           <details class="faq reveal">
             <summary><span>¿Está validado clínicamente?</span><span class="faq-ico" aria-hidden="true"></span></summary>
-            <p>ARGOS es un prototipo funcional. La calibración en niños con el Instituto Nacional de Oftalmología está en preparación y la validación clínica está planificada. Todavía no cuenta con registro sanitario.</p>
+            <p>Bleenky es un prototipo funcional. La calibración en niños con el Instituto Nacional de Oftalmología está en preparación y la validación clínica está planificada. Todavía no cuenta con registro sanitario.</p>
           </details>
           <details class="faq reveal">
             <summary><span>¿Necesita internet para funcionar?</span><span class="faq-ico" aria-hidden="true"></span></summary>
@@ -1436,16 +1436,16 @@
   <div class="aurora aurora-foot" aria-hidden="true"><span class="a1"></span></div>
   <div class="relative mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-[1fr_0.6fr_1.6fr] lg:gap-10 lg:px-8 lg:py-24">
     <div class="min-w-0">
-      <a href="#inicio" class="brand inline-flex" aria-label="ARGOS Vision Screening System, volver al inicio">
-        <img src="img/argos-logo.webp" alt="" width="900" height="270" class="logo logo-glow h-16 w-auto sm:h-[4.5rem]" loading="lazy" decoding="async">
+      <a href="#inicio" class="brand inline-flex" aria-label="Bleenky Vision Screening System, volver al inicio">
+        <img src="img/bleenky-logo.webp" alt="" width="900" height="270" class="logo logo-glow h-16 w-auto sm:h-[4.5rem]" loading="lazy" decoding="async">
       </a>
-      <p class="mt-5 max-w-[40ch] text-sm leading-relaxed text-ink-muted">Dispositivo portátil de tamizaje visual pediátrico, desarrollado por estudiantes de la Pontificia Universidad Católica del Perú.</p>
+      <p class="mt-5 max-w-[40ch] text-sm leading-relaxed text-ink-muted">Una solución de Myngop. Dispositivo portátil de tamizaje visual pediátrico, desarrollado por estudiantes de la Pontificia Universidad Católica del Perú.</p>
       <p class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[var(--warm-fg)]"><span class="dot-warm" aria-hidden="true"></span>Tamizaje, no diagnóstico</p>
       <div class="mt-6 flex flex-wrap gap-2">
         <!-- Reemplaza href="#" por los enlaces reales de tus redes -->
-        <a class="social" href="#" aria-label="LinkedIn de ARGOS"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21h-4V9.5Z"/></svg>LinkedIn</a>
-        <a class="social" href="#" aria-label="Instagram de ARGOS"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a>
-        <a class="social" href="#" aria-label="YouTube de ARGOS"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8ZM9.75 15.02V8.98L15.5 12l-5.75 3.02Z"/></svg>YouTube</a>
+        <a class="social" href="#" aria-label="LinkedIn de Myngop"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21h-4V9.5Z"/></svg>LinkedIn</a>
+        <a class="social" href="#" aria-label="Instagram de Myngop"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a>
+        <a class="social" href="#" aria-label="YouTube de Myngop"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8ZM9.75 15.02V8.98L15.5 12l-5.75 3.02Z"/></svg>YouTube</a>
       </div>
     </div>
 
@@ -1544,7 +1544,7 @@
 
   <div class="relative border-t border-white/10">
     <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-7 text-xs text-ink-muted sm:px-6 lg:px-8">
-      <p>© 2026 ARGOS</p>
+      <p>© 2026 Myngop</p>
       <p class="flex items-center gap-2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>Lima, Perú</p>
     </div>
   </div>
@@ -1611,7 +1611,7 @@
     const next = effTheme() === 'dark' ? 'light' : 'dark';
     const apply = () => { root.dataset.theme = next; paintThemeBtn(); };
     if (document.startViewTransition && !reduce) document.startViewTransition(apply); else apply();
-    try { localStorage.setItem('argos-theme', next); } catch (e) {}
+    try { localStorage.setItem('bleenky-theme', next); } catch (e) {}
   });
   if (darkMQ.addEventListener) darkMQ.addEventListener('change', paintThemeBtn);
   paintThemeBtn();
@@ -1696,7 +1696,7 @@
       e.preventDefault();
       const f = document.createElement('iframe');
       f.src = `https://www.youtube-nocookie.com/embed/${a.dataset.yt}?autoplay=1&rel=0&playsinline=1&origin=${encodeURIComponent(location.origin)}`;
-      f.title = 'ARGOS en acción: concientización y uso del dispositivo';
+      f.title = 'Bleenky en acción: concientización y uso del dispositivo';
       f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
       f.allowFullscreen = true;
       f.referrerPolicy = 'strict-origin-when-cross-origin';
