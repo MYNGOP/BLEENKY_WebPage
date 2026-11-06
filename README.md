@@ -1,6 +1,6 @@
-# ARGOS · Landing page
+# BLEENKY · Landing page
 
-Página web de ARGOS, dispositivo portátil de tamizaje visual pediátrico (The Axial Hunters, PUCP).
+Página web de BLEENKY, dispositivo portátil de tamizaje visual pediátrico (MYNGOP, PUCP).
 
 - `index.html`: página completa (HTML, CSS y JS en un solo archivo). Usa Tailwind CSS v4 y Google Fonts desde CDN.
 - `img/`: logo (PNG/WebP con fondo transparente), íconos y fotos del prototipo en WebP (800 y 1600 px).
